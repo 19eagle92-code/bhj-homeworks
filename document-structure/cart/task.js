@@ -32,7 +32,8 @@ products.forEach(function (product) {
 
 // Функция добавления товара в корзину
 function addToCart(productId, imageSrc, quantity) {
-    const cartContainer = document.getElementById('cart__products');
+    // const cartContainer = document.getElementById('cart__products');
+    const cartContainer = document.querySelector('.cart__products');
     const cartItems = cartContainer.querySelectorAll('.cart__product');
 
     let existingItem = null;
